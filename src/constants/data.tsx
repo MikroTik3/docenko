@@ -42,7 +42,7 @@ export const links: Link[] = [
 		)
 	},
 	{
-		link: 'https://github.com/MikroTik3',
+		link: 'public/cv/resume.pdf',
 		icon: (
 			<svg
 				className='size-4'

@@ -42,7 +42,7 @@ export const links: Link[] = [
 		)
 	},
 	{
-		link: 'public/cv/resume.pdf',
+		link: '/cv/resume.pdf',
 		icon: (
 			<svg
 				className='size-4'

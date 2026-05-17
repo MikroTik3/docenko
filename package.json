@@ -1,28 +1,58 @@
 {
-  "name": "portfolio",
-  "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
-    "lint": "eslint"
-  },
-  "dependencies": {
-    "next": "16.2.6",
-    "react": "19.2.4",
-    "react-dom": "19.2.4"
-  },
-  "devDependencies": {
-    "@tailwindcss/postcss": "^4",
-    "@types/node": "^20",
-    "@types/react": "^19",
-    "@types/react-dom": "^19",
-    "babel-plugin-react-compiler": "1.0.0",
-    "eslint": "^9",
-    "eslint-config-next": "16.2.6",
-    "tailwindcss": "^4",
-    "typescript": "^5"
-  },
-  "packageManager": "pnpm@10.30.2+sha512.36cdc707e7b7940a988c9c1ecf88d084f8514b5c3f085f53a2e244c2921d3b2545bc20dd4ebe1fc245feec463bb298aecea7a63ed1f7680b877dc6379d8d0cb4"
+	"name": "portfolio",
+	"version": "0.1.0",
+	"private": true,
+	"scripts": {
+		"dev": "next dev -p 3000 --turbo",
+		"build": "next build",
+		"start": "next start -p 3000",
+		"prepare": "husky",
+		"lint": "next lint",
+		"format": "prettier --check .",
+		"format:fix": "prettier --write --list-different ."
+	},
+	"dependencies": {
+		"@eslint/eslintrc": "^3.3.5",
+		"@radix-ui/react-hover-card": "^1.1.15",
+		"@tabler/icons-react": "^3.44.0",
+		"class-variance-authority": "^0.7.1",
+		"clsx": "^2.1.1",
+		"framer-motion": "^12.38.0",
+		"lucide-react": "^1.16.0",
+		"motion": "^12.38.0",
+		"next": "16.2.6",
+		"next-themes": "^0.4.6",
+		"qss": "^3.0.0",
+		"radix-ui": "^1.4.3",
+		"react": "19.2.4",
+		"react-dom": "19.2.4",
+		"react-icons": "^5.6.0",
+		"react-intersection-observer": "^10.0.3",
+		"shadcn": "^4.7.0",
+		"simplebar": "^6.3.3",
+		"simplebar-react": "^3.3.2",
+		"sonner": "^2.0.7",
+		"tailwind-merge": "^3.6.0",
+		"tw-animate-css": "^1.4.0"
+	},
+	"devDependencies": {
+		"@commitlint/cli": "^21.0.1",
+		"@commitlint/config-conventional": "^21.0.1",
+		"@commitlint/types": "^21.0.1",
+		"@tailwindcss/postcss": "^4",
+		"@trivago/prettier-plugin-sort-imports": "^6.0.2",
+		"@types/node": "^20",
+		"@types/react": "^19",
+		"@types/react-dom": "^19",
+		"babel-plugin-react-compiler": "1.0.0",
+		"eslint": "^9",
+		"eslint-config-next": "16.2.6",
+		"husky": "^9.1.7",
+		"lint-staged": "^17.0.5",
+		"prettier": "^3.8.3",
+		"prettier-plugin-tailwindcss": "^0.8.0",
+		"tailwindcss": "^4",
+		"typescript": "^5"
+	},
+	"packageManager": "pnpm@10.30.2+sha512.36cdc707e7b7940a988c9c1ecf88d084f8514b5c3f085f53a2e244c2921d3b2545bc20dd4ebe1fc245feec463bb298aecea7a63ed1f7680b877dc6379d8d0cb4"
 }

@@ -1,5 +1,3 @@
-import Link from 'next/link'
-
 import { educations, links } from '@/constants/data'
 
 import { CardEducation } from '../ui/card-education'
@@ -27,7 +25,7 @@ export default function About() {
 
 				<div className='flex items-center gap-6'>
 					{links.map((link, index) => (
-						<Link
+						<a
 							key={index}
 							href={link.link}
 							target='_blank'
@@ -35,7 +33,7 @@ export default function About() {
 							className='text-foreground border-foreground group flex items-center gap-2 font-medium opacity-40 transition-all hover:opacity-100'
 						>
 							{link.icon}
-						</Link>
+						</a>
 					))}
 				</div>
 
